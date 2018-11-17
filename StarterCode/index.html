@@ -16,7 +16,7 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">UFO Sightings
-            <img class="nav-ufo" src="static/images/ufo.svg">
+            <img class="nav-ufo" src="static/images/alien61.gif">
           </a>
         </div>
       </div>
@@ -25,29 +25,37 @@
       <h1>UFO Sightings</h1>
       <p>The Truth is Out There</p>
     </div>
+    <img class="nav-ufo" src="static/images/alien61.gif" >
     <div class="container">
       <div class="row margin-top-50">
-        <div class="col-md-2">
-          <aside class="filters">
-            <div class="panel panel-default">
-              <div class="panel-heading">Filter Search</div>
-              <div class="panel-body">
-                <form>
-                  <div class="form-group">
-                    <ul class="list-group" id="filters">
-                      <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/13/2010">
-                      </li>
+
+        <div class="col-md-12">
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button id="filter-btn" type="submit" class="btn btn-default">Filter Table by:</button>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" 
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Dropdown
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a>Date/Time</a></li>
+                      <li><a>City</a></li>
+                      <li><a>State</a></li>
+                      <li><a>Country</a></li>
+                      <li><a>Shape</a></li>
                     </ul>
-                  </div>
-                  <button id="filter-btn" type="submit" class="btn btn-default">Filter Table</button>
-                </form>
+                  </div> 
+                  <div>
+                    <input type="text" class="form-control" aria-label="test1"> 
+                  </div>                     
               </div>
-            </div>
-          </aside>
         </div>
-        <div class="col-md-10">
+
+
+        <div class="col-md-12">
           <div id="table-area" class="">
             <table id="ufo-table" class="table table-striped">
               <thead>
@@ -74,6 +82,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
   <script src="static/js/data.js"></script>
   <script src="static/js/app.js"></script>
+  <audio controls="controls" autoplay = "autoplay" loop = "loop" preload=true >
+    
+        <source src="static/images/xfiles.mp3" type="audio/mpeg">
+    
+    </audio>
 </body>
 
 </html>
