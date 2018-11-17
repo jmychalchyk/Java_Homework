@@ -31,14 +31,12 @@
 
         <div class="col-md-12">
             <div class="input-group">
-                <div class="input-group-btn">
-                    <button id="filter-btn" type="submit" class="btn btn-default">Filter Table by:</button>
-                </div>
 
+              <div class="input-group-addon">
                 <div class="dropdown">
                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" 
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      Dropdown
+                      Choose a Field to Filter
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                       <li><a>Date/Time</a></li>
@@ -47,11 +45,19 @@
                       <li><a>Country</a></li>
                       <li><a>Shape</a></li>
                     </ul>
-                  </div> 
-                  <div>
-                    <input type="text" class="form-control" aria-label="test1"> 
-                  </div>                     
+                </div>
               </div>
+                <div class="input-group-addon">
+                  <input type="text" class="form-control" aria-label="test1"> 
+                </div>
+
+              <div class="input-group-addon">
+                <div class="input-group-btn">
+                    <button id="filter-btn" type="submit" class="btn btn-default">Filter Table</button>
+                </div>
+              </div>
+
+            </div>
         </div>
 
 

@@ -14,6 +14,12 @@ body {
   background-size: cover;
   }
 
+.input-group { 
+  align-content:left;
+}
+.form-control {
+  width: 250px;
+}
 .navbar {
   padding: 5px;
   margin: 0;
@@ -26,19 +32,6 @@ body {
   left: 150px;
   width: 35px;
   color: white;
-}
-
-/* Adding styles to the aside and filter form */
-.ufo-form {
-  margin-top: 50px;
-}
-
-.filters .panel-body {
-  padding: 0;
-}
-
-.filters {
-  margin-top: 10px;
 }
 
 select {
@@ -156,6 +149,7 @@ select {
 
   .hero h1 {
     animation: smaller-title 1.2s forwards linear;
+    
   }
 }
 
