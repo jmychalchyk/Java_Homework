@@ -22,7 +22,7 @@ function clickFilter()
 {
     d3.event.preventDefault();
     tbody.html("");
-    var inputElement = d3.select("#datetime").property("value");
+    var inputElement = d3.select("#criteria").property("value");
     var filteredData = tableData.filter(rw => rw.datetime === inputElement);
 
     buildTbl(filteredData);
