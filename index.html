@@ -15,29 +15,32 @@
             <div class="col-xl">
                     <img src="static/images/alien61.gif" style="width:200px;height:200px;" >
                     <a href="https://fontmeme.com/alien-resurrection-font/"><img src="https://fontmeme.com/permalink/181118/bb2e364a1a6f548e65c795158a6dfa65.png" alt="alien-resurrection-font" ></a>
-
-                </div>
-            </div>      
-
+            </div>
+        </div>      
+<br><br>
        
         <div class="row">
-            <div class="col-xl">
+            <div class="col-">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">Search by:</span>
-                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select a field to filter by</button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" >Date/Time</a>
-                            <a class="dropdown-item" >City</a>
-                            <a class="dropdown-item" >State</a>
-                            <a class="dropdown-item" >Country</a>
-                            <a class="dropdown-item" >Shape</a>
+                        <span class="input-group-text" id="basic-addon1">Search by:</span>
+                        <button id="drophead" class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select a field to filter by</button>
+                        <div id="dropfilter" class="dropdown-menu">
+                            <a id="datetime" class="dropdown-item" >Date/Time</a>
+                            <a id="city" class="dropdown-item" >City</a>
+                            <a id="state" class="dropdown-item" >State</a>
+                            <a id="country" class="dropdown-item" >Country</a>
+                            <a id="shape" class="dropdown-item" >Shape</a>
                         </div>
+                    
+                        <div>
+                            <button id="drophead2" class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select filter criteria</button>
+                            <div id="dropcriteria" class="dropdown-menu">
+                                <a class="dropdown-item" >placeholder</a>
+                            </div>
+                        </div>
+                        <button id='reset' type="button" class="btn btn-outline-secondary">Reset</button>
                     </div>
-
-                    <input id="criteria" type="text" class="form-control" aria-label="Text input with dropdown button">
-                    <button id="filter-btn" type="button" class="btn btn-outline-secondary">Filter</button>
-                    <button type="button" class="btn btn-outline-secondary">Reset</button>
                 </div>
             </div>
         </div>
